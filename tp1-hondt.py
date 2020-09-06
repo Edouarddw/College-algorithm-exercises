@@ -1,5 +1,7 @@
 #First exercices, counting votes using the Hondt system
 def plus_forte_moyenne(n_sieges, resultat_vote):
+    #Inputs are the number of seats available and a list with the results of the election
+    #Output is a list of the number of seats for each party
     vote = []
     t = []
     parti = 0
@@ -20,11 +22,13 @@ def plus_forte_moyenne(n_sieges, resultat_vote):
     return t
           
 if not plus_forte_moyenne(11, [437, 478, 85]) == [5,5,1]:
-    print("Exemple de la méthode de D'Hondt")
+    print("plus_forte_moyenne isn't returning the good value")
 
     
-
+#Using an other calculation method
 def beta_plus_forte_moyenne(n_sieges, resultat_vote):
+    #Inputs are the number of seats available and a list with the results of the election
+    #Output is a list of the number of seats for each party
     somme_vote = 0
     for i in resultat_vote :
         somme_vote += i
@@ -47,5 +51,5 @@ def beta_plus_forte_moyenne(n_sieges, resultat_vote):
     return t
             
 if not beta_plus_forte_moyenne(13, [482]) == [13]:
-    print("------------------------------")
+    print("beta_plus_forte_moyenne isn't returning the good value")
     
