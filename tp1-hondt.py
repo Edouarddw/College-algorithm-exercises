@@ -1,3 +1,4 @@
+#First exercices, counting votes using the Hondt system
 def plus_forte_moyenne(n_sieges, resultat_vote):
     vote = []
     t = []
